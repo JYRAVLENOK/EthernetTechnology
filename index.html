@@ -1,0 +1,120 @@
+<!--	. селекторы CSS: по имени тега, по id, по class, сложный селектор
+		. свойства CSS: цвет текста и фона, размер, положение
+		. CSS3: анимация свойств (transition, keyframes)
+		. @media: изменение стилей в зависимости от размера или ориентации устройства
+		. позиционирование элементов и z-index
+		. подключение внешних шрифтов
+		. transform
+		. псевдоклассы
+		. псевдоэлементы
+		. вычисления: calc	 						-->
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Подключение файла со стилями -->
+    <link rel="stylesheet" href="2.css">
+    <!-- Настроить keywords, description -->
+    <meta name="keywords" content="Лабораторная работа, Интернет технологии, HTML">
+    <meta name="description" content="Лабораторная работа №1 по курсу 'Интернет технологии'">
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Лабораторная работа №1</title>
+</head>
+<body>
+<header class="header">
+    <div>
+        <div class="container-list">
+            <h1 class="animation"> Лабораторная работа №1</h1>
+            <ul class="list">
+                <li class="list-item"><a href="#img-example">Картинка</a></li>
+                <li class="list-item"><a href="#table-example">Тарифы</a></li>
+                <li class="list-item"><a href="#iframe-example">Примеры работы на 3D принтере</a></li>
+                <li class="list-item"><a href="#form-example">Регистрация</a></li>
+                <li class="list-item"><a href="#text-example">Форматирование текста</a> </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<h2 id=img-example>Пример img</h2><br>
+<div class="_container">
+    <img class="image img2" src="2.png" alt="Принтер">
+</div>
+
+<h2 id=table-example>Тарифы (цена за см^3)</h2><br>
+<div class ="_container">
+    <table border="5">
+        <tr>
+            <th></th>
+            <th>ABS пластик</th>
+            <th>PLA пластик</th>
+            <th>Прозрачный пластик</th>
+        </tr>
+        <tr>
+            <th>Толщина от 0.1 до 0.5 мм</th>
+            <td>50 руб</td>
+            <td>50 руб</td>
+            <td>50 руб</td>
+        </tr>
+        <tr>
+            <th>Толщина от 0.1 до 0.5 мм</th>
+            <td>50 руб</td>
+            <td>50 руб</td>
+            <td>50 руб</td>
+        </tr>
+        <tr>
+            <th>Толщина от 0.5 до 1 мм</th>
+            <td>50 руб</td>
+            <td>50 руб</td>
+            <td>50 руб</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2 id=iframe-example>Пример работы</h2><br>
+    <iframe src="https://www.youtube.com/embed/JWkHkhnNsew" allowfullscreen></iframe>
+</div>
+
+<div>
+    <h2 id=form-example>Регистрация</h2><br>
+    <h3>Заполните форму:</h3>
+    <form action="">
+        <fieldset>
+            Личная информация: <br>
+            <label for="firstname"> Имя: </label>
+            <input type="text" id="firstname"><br>
+            <label for="password"> Ваш пароль: </label>
+            <input type="password" id="password"><br>
+            Ваш пол:
+            <select size=1>
+                <option value=1>Выберите</option>
+                <option value=2> Мужской </option>
+                <option value=3> Женский </option>
+            </select><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <h2 id=text-example>Пример форматирования текста</h2>
+    <p>
+        Если вы находитесь в Красноярске и хотите распечатать 3D модель для себя или в подарок – <span style="color: green">сервис 3DP позволяет удобно это сделать</span>.
+    </p>
+    <p>
+
+        Мы размещаем список студий, где предоставляются услуги 3D печати в Красноярске. Всё просто: на сайте вы находите интересующую модель, выбираете студию и делаете заказ. Мы выступаем посредником и максимально облегчаем данный процесс.
+
+        В каталоге представлены разнообразные модели: одни можно скачивать бесплатно, за другие – нужно заплатить небольшую сумму. Общий заказ на 3D печать в Красноярске будет включать стоимость модели. Процесс простой: в студии имеется 3D принтер,
+        который создаёт объёмное изделие (с технологией можно ознакомиться на сайте). Здесь вы найдёте модели самых разных изделий: от полезных бытовых приборов до детских игрушек, украшений, сувениров и аксессуаров. Распечатанное изделие всегда становится хорошим подарком.
+    </p>
+</div>
+</body>
+</html>
